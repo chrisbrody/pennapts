@@ -14,8 +14,16 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
     <link href="<?php echo $cssPath; ?>style-new.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="<?php echo $imgPath; ?>icons/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="<?php echo $imgPath; ?>icons/favicon.ico" type="image/x-icon">
+    <!-- Standard favicon -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- For browsers that support PNG favicons -->
+    <link rel="icon" href="./images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="./images/favicon-32x32.png" sizes="32x32">
+    <!-- For Android devices -->
+    <link rel="icon" href="./images/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="./images/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <!-- For Apple devices -->
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
 
 </head>
 
