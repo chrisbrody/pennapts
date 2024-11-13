@@ -61,7 +61,7 @@ require_once 'inc/header.php';
 
 						<div class="c5">
 							<label for="email">Email <span>* is required</span></label>
-							<input type="text" id="email" name="email" class="req" />
+							<input type="email" id="email" name="email" class="req" />
 						</div>
 
 						<div class="c5">
@@ -1349,6 +1349,23 @@ require_once 'inc/header.php';
             const selectedValues = $(this).val() || [];
             locations = selectedValues;
             console.log('Updated locations:', locations);
+        });
+
+        $('#phone').on('input', function() {
+            var input = $(this).val().replace(/\D/g, ''); // Remove all non-digit characters
+            var formattedPhone = '';
+
+            if (input.length > 0) {
+                formattedPhone = '(' + input.substring(0, 3);
+            }
+            if (input.length >= 4) {
+                formattedPhone += ') ' + input.substring(3, 6);
+            }
+            if (input.length >= 7) {
+                formattedPhone += '-' + input.substring(6, 10);
+            }
+
+            $(this).val(formattedPhone);
         });
 
 	</script>

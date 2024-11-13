@@ -49,7 +49,7 @@ require_once 'inc/header.php';
 
 					<div>
 						<label for="email">Email <span>* is required</span></label>
-						<input type="text" id="email" name="email" class="req" />
+						<input type="email" id="email" name="email" class="req" />
 					</div>
 
 					<div>
@@ -71,3 +71,22 @@ require_once 'inc/header.php';
 	</section>
 
 <?php require_once 'inc/footer.php'; ?>
+
+<script>
+    $('#phone').on('input', function() {
+        var input = $(this).val().replace(/\D/g, ''); // Remove all non-digit characters
+        var formattedPhone = '';
+
+        if (input.length > 0) {
+            formattedPhone = '(' + input.substring(0, 3);
+        }
+        if (input.length >= 4) {
+            formattedPhone += ') ' + input.substring(3, 6);
+        }
+        if (input.length >= 7) {
+            formattedPhone += '-' + input.substring(6, 10);
+        }
+
+        $(this).val(formattedPhone);
+    });
+</script>

@@ -49,7 +49,7 @@
 
 					<div>
 						<label for="email">Landlord Email <span>* is required</span></label>
-						<input type="text" id="email" name="email" class="req" />
+						<input type="email" id="email" name="email" class="req" />
 					</div>
 
 					<div>
@@ -73,7 +73,7 @@
                     
                     <div>
 						<label for="date">Date Available</label>
-						<input type="text" id="date" name="date" />
+						<input type="date" id="date" name="date" />
 					</div>
 
 				</div>
@@ -92,3 +92,22 @@
 	</section>
 
 <?php require_once('inc/footer-NEW.php'); ?>
+
+<script>
+    $('#phone').on('input', function() {
+        var input = $(this).val().replace(/\D/g, ''); // Remove all non-digit characters
+        var formattedPhone = '';
+
+        if (input.length > 0) {
+            formattedPhone = '(' + input.substring(0, 3);
+        }
+        if (input.length >= 4) {
+            formattedPhone += ') ' + input.substring(3, 6);
+        }
+        if (input.length >= 7) {
+            formattedPhone += '-' + input.substring(6, 10);
+        }
+
+        $(this).val(formattedPhone);
+    });
+</script>

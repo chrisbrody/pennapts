@@ -719,7 +719,8 @@ form label {
 }
 form input,
 form select,
-form textarea {
+form textarea,
+form input[type="date"] {
 	border: 1px solid #ccc;
 	font-size: 16px;
 	padding: 10px;
