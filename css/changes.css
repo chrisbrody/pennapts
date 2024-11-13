@@ -1,0 +1,59 @@
+h4 {
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;	
+	line-height: 20px;
+	font-size: 18px;
+	margin-top: 15px;}
+	
+h5 {
+	font-weight: inherit;
+	font-family: 'Open Sans', sans-serif;	
+	line-height: 60px;
+	font-size: 60px;
+	margin-top: 10px;
+	margin-bottom: 25px;}
+	
+.textlink {color:#06C; font-size: 16px; text-decoration: none;}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+	
+div.infoblock {
+    position: relative }
+
+div.infoblock p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+	
+.listtext {
+	position: relative;
+	margin-top:-100px;
+	margin-left: 140px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	}
+
+img.tn {
+	border: solid 1px black;
+	margin: 10px;
+	}
+
+.listbox {
+	width: 400px;
+	height: 132px;
+	border: solid 1px black;
+	float: left;
+	margin-left: 35px;
+	background-image:url(../images/baq.png);
+	margin-bottom: 30px;
+	}
+	
+.listbox:hover {
+	background-color: #CCC;
+	}
