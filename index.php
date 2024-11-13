@@ -24,7 +24,7 @@
             </div>
          </section>
 
-         <a href="<?php echo $webPath; ?>search?type=rentals" class="test">
+         <a href="<?php echo $webPath; ?>search.php?type=rentals" class="test">
             <div>
                 <span>Click to Search<br> <em>Apartments</em></span>
             </div>
@@ -62,7 +62,7 @@
 
         <div class="glass">
             <section class="search-buttons">
-                <a href="<?php echo $webPath; ?>landlords" id="landlords">
+                <a href="<?php echo $webPath; ?>landlords.php" id="landlords">
                     <span>Landlords,<br> <em>List Your Property</em></span>
                 </a>            
             </section>

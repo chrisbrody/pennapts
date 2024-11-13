@@ -103,7 +103,7 @@ header nav a:first-of-type {
 }
 @media (max-width: 900px) {
 	header {
-		grid-template-columns: 1fr 350px;
+		grid-template-columns: 1fr;
 	}
 	header .social-icons {
 		justify-self: start;
@@ -623,7 +623,25 @@ footer .copy {
 	right: 0;
 	bottom: 0;
 }
-@media (max-width: 675px) {
+@media (max-width: 900px) {
+	.article-content.article-content-one,
+	.article-content.article-content-two {
+		display: flex;
+		flex-direction: column;  /* Stack the image and text in a column */
+		align-items: center;  /* Center-align the items */
+	}
+	.article-content-two .image-wrapper {
+		order: -1;  /* This moves the image to the top */
+		margin-right: 0;  /* Remove the right margin when stacked */
+		margin-bottom: 15px;  /* Add space between image and text */
+	}
+	.article-content-two p {
+		order: 1;  /* Keep the text in its default position below the image */
+	}
+	.article .pr0 {
+		text-align: left !important;
+	}
+
 	footer {
 		grid-template-columns: 1fr;
 		justify-items: center;
@@ -1004,10 +1022,10 @@ ul.left-align li {
 }
 .article {
 	border-top: 1px solid black;
-	padding-top: 60px;
+	padding: 60px 8px 0;
 }
 .article .wrapper {
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 .article h1 {
@@ -1078,4 +1096,39 @@ ul.left-align li {
 	margin: 30px auto;
 	border: 1px solid black;
 	width: fit-content;
+}
+@media (max-width: 1100px) {
+	.article .wrapper {
+		max-width: 1000px;
+	}
+}
+@media (max-width: 1000px) {
+	.article .wrapper {
+		max-width: 900px;
+	}
+}
+@media (max-width: 900px) {
+	.article-content {
+		margin: 50px 0;
+	}
+	.article .caption img {
+		width: 100%;
+	}
+	.article .wrapper {
+		max-width: 800px;
+	}
+	.article h1 {
+		padding: 0 8px;
+		font-size: 40px;
+	}
+	.article .buttons {
+		width: inherit;
+	}
+	.article p {
+		padding: 0 8px;
+	}
+
+	.article-content {
+		display: block;
+	}
 }

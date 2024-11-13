@@ -26,28 +26,31 @@
     <a href="../<?php echo $webPath; ?>" class="logo"><img src="../<?php echo $imgPath; ?>home/logo-new.png" alt="Pennsylvania Apartments"></a>
 
     <nav>
-        <a href="../<?php echo $webPath; ?>search?type=sales">Sales</a>
-        <a href="../<?php echo $webPath; ?>search?type=rentals">Rentals</a>
-        <a href="../<?php echo $webPath; ?>blog">Blog</a>
-        <a href="../<?php echo $webPath; ?>contact">Contact</a>
+        <div>
+            <a href="../<?php echo $webPath; ?>search.php?type=sales">Sales</a>
+            <a href="../<?php echo $webPath; ?>search.php?type=rentals">Rentals</a>
+            <a href="../<?php echo $webPath; ?>blog.php">Blog</a>
+            <a href="../<?php echo $webPath; ?>contact.php">Contact</a>
+        </div>
+        <div>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/amorealty">
+                        <img src="../<?php echo $imgPath; ?>home/facebook.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/amo-realty/">
+                        <img src="../<?php echo $imgPath; ?>home/linkedin.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/amorealty/">
+                        <img src="../<?php echo $imgPath; ?>home/instagram.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-
-    <ul class="social-icons">
-        <li>
-            <a href="https://www.facebook.com/amorealty">
-                <img src="../<?php echo $imgPath; ?>home/facebook.png">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/company/amo-realty/">
-                <img src="../<?php echo $imgPath; ?>home/linkedin.png">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/amorealty/">
-                <img src="../<?php echo $imgPath; ?>home/instagram.png">
-            </a>
-        </li>
-    </ul>
 
 </header>

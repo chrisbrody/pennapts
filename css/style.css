@@ -394,8 +394,7 @@ footer span {
     display: block;}
 
 footer span:last-of-type {
-    font-size: 12px;
-    margin-top: 30px;}
+    font-size: 16px;}
 
 footer ul {
     vertical-align: top;
@@ -420,9 +419,6 @@ footer ul li {
 footer ul:last-of-type li {
     display: inline-block;
     vertical-align: top;}
-
-footer ul:last-of-type li:first-child {
-    display: block;}
 
 footer ul:last-of-type li img {
     display: inline-block;
@@ -875,6 +871,7 @@ footer span {
     margin-bottom: 5px;
 }
 footer p {
+    font-size: 18px;
     margin-top: 30px;
     margin-bottom: 5px;
 }
@@ -885,18 +882,30 @@ footer .home {
     /* margin: 0 auto; */
 }
 footer .phone {
+    font-size: 16px;
     margin-right: 60px;
     vertical-align: top;
+    text-decoration: none;
 }
 footer .copy {
     font-size: 12px;
     display: block;
     text-align: right;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    margin-top: 60px;
 }
-@media (max-width: 675px) {
+@media (max-width: 1199px) {
+    .wrap {
+        padding: 0 15px;
+        max-width: 1100px;
+        width: fit-content;}
+
+    form#contact {
+        width: 100%;
+        display: block;
+        margin-right: 0;}
+}
+@media (max-width: 900px) {
+
     footer {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -939,16 +948,25 @@ footer .copy {
         align-items: center;
         justify-content: space-between;
         padding: 0 15px;
+        margin-top: 30px;
     }
     footer ul li a {
         padding-right: 10px;
         padding-left: 10px;
     }
 
+    footer > div:nth-of-type(2) {
+        justify-self: end;
+    }
+
 }
+
+
+
+
 
 footer > div:nth-of-type(2) {
-    justify-self: end;
+    text-align: right;
 }
 
 
@@ -964,238 +982,231 @@ footer > div:nth-of-type(2) {
 
 
 
+@media screen and (max-width: 900px) {
+
+#popup span {
+    font-size: 14px;}
+
+#popup {
+    width: 300px;
+    margin-left: -150px;}
+
+.wrap {
+    width: 100%;
+    display: block;}
+
+.main .wrap {
+    padding: 0 5%;}
+
+.main {
+    padding-top: 15px !important;}
+
+.header-wrap h1 {
+    padding: 13px 8px;
+}
+
+header {
+    height: auto;
+    padding: 15px 3%;}
+
+header a img {
+    max-width: 100%;
+    vertical-align: middle;
+    top: 0;}
+
+header span {
+    display: none;}
+
+.wrap h1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 14px;}
+
+h2 {
+    font-size: 16px;}
+
+p {
+    line-height: 1.25;}
+
+.main {
+    padding: 0;}
+
+form #locations{
+    margin-bottom: 25px;}
+
+fieldset {
+    display: block;
+    border:none;
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+    padding-bottom: 30px;}
+
+fieldset ~ fieldset {
+    border-bottom: none;
+    padding-top: 25px;}
+
+#search .c5,
+#search .c4,
+#search .c6 {
+    width: 100%;
+    padding-left: 0;
+    padding: 0;}
+
+textarea {
+    height: 175px;}
+
+#search button {
+    display: block;
+    width: 100% !important;
+    font-size: 14px !important;
+    height: auto !important;
+    line-height: 1.25 !important;
+    margin-right: 0 !important;}
 
 
+.ms-container {
+    background-image: none !important;}
 
+.ms-container .ms-selectable, .ms-container .ms-selection {
+    display: block !important;
+    width: 100% !important;}
 
+.ms-container .ms-selectable {
+    margin-bottom: 20px !important;}
 
+footer {
+    padding-bottom: 10px;}
 
+footer h2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;}
 
-@media screen and (max-width: 675px) {
+footer h2 a {
+    font-size: 16px;
+    text-align: center;}
 
-    #popup span {
-        font-size: 14px;}
+footer span {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;}
 
-    #popup {
-        width: 300px;
-        margin-left: -150px;}
+footer .c3,
+footer .c7 {
+    display: block;
+    width: 100%;}
 
-    .wrap {
-        width: 100%;
-        display: block;}
+footer ul {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-left: 0 !important;}
 
-    .main .wrap {
-        padding: 0 5%;}
+footer ul:last-of-type {
+    margin-bottom: 0;}
 
-    .main {
-        padding-top: 15px !important;}
+footer ul:last-of-type br {
+    display: none;}
 
-    .header-wrap h1 {
-        padding: 13px 8px;
-    }
+footer > div:nth-of-type(2) {
+    justify-self: start;
+    width: 100%;
+}
+footer ul:last-of-type li:first-child {
+    display: inline-block;
+}
 
-    header {
-        height: auto;
-        padding: 15px 3%;}
+#contact {
+    display: block;
+    border: none;
+    border-radius: 0;
+    width: 100%;}
 
-    header a img {
-        max-width: 100%;
-        vertical-align: middle;
-        top: 0;}
+#contactus p  {
+    font-size: 14px;
+    display: block;
+    margin: auto;}
 
-    header span {
-        display: none;}
+#homepage .c3,
+#homepage .c7 {
+    display: block;
+    width: 100%;}
 
-    .wrap h1 {
-        text-align: center;
-        border-bottom: 1px solid black;
-        font-size: 14px;}
+#homepage .c7 {
+    margin-top: 25px;}
 
-    h2 {
-        font-size: 16px;}
+#homepage img {
+    display: none;}
 
-    p {
-        line-height: 1.25;}
+#sales,
+#rentals {
+    display: block;
+    text-align: center;
+    background: rgb(125,126,125);
+    background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(28,28,28,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(28,28,28,1)));
+    background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#1c1c1c',GradientType=0 );
+    height: auto;
+    line-height: 1;
+    width: 100%;}
 
-    .main {
-        padding: 0;}
+#sales p,
+#rentals p {
+    line-height: 1;
+    font-size: 24px;}
 
-    form #locations{
-        margin-bottom: 25px;}
+#sales span,
+#rentals span {
+    font-size: 32px;
+    margin-top: 5px;
+    display: block;}
 
-    fieldset {
-        display: block;
-        border:none;
-        padding-top: 10px;
-        width: 100%;
-        border-bottom: 2px solid black;
-        border-radius: 0;
-        padding-bottom: 30px;}
+.contact {
+    background: rgb(125,126,125);
+    background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(28,28,28,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(28,28,28,1)));
+    background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#1c1c1c',GradientType=0 );
+    height: auto;
+    text-align: center;}
 
-    fieldset ~ fieldset {
-        border-bottom: none;
-        padding-top: 25px;}
+.contact span:nth-of-type(2),
+.contact span:nth-of-type(3) {
+    font-size: 14px;}
 
-    #search .c5,
-    #search .c4,
-    #search .c6 {
-        width: 100%;
-        padding-left: 0;
-        padding: 0;}
+.contact a {
+    font-size: 14px;}
 
-    textarea {
-        height: 175px;}
+.landlord {
+    background: rgb(125,126,125);
+    background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(28,28,28,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(28,28,28,1)));
+    background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#1c1c1c',GradientType=0 );
+    height: auto;
+    text-align: center;}
 
-    #search button {
-        display: block;
-        width: 100% !important;
-        font-size: 14px !important;
-        height: auto !important;
-        line-height: 1.25 !important;
-        margin-right: 0 !important;}
+.landlord span:nth-of-type(2),
+.landlord span:nth-of-type(3) {
+    font-size: 14px;}
 
+.landlord a {
+    font-size: 14px;}
 
-    .ms-container {
-        background-image: none !important;}
-
-    .ms-container .ms-selectable, .ms-container .ms-selection {
-        display: block !important;
-        width: 100% !important;}
-
-    .ms-container .ms-selectable {
-        margin-bottom: 20px !important;}
-
-    footer {
-        padding-bottom: 10px;}
-
-    footer h2 {
-        display: block;
-        width: 100%;
-        margin-bottom: 5px;}
-
-    footer h2 a {
-        font-size: 16px;
-        text-align: center;}
-
-    footer span {
-        display: block;
-        width: 100%;
-        font-size: 14px;
-        text-align: center;}
-
-    footer .c3,
-    footer .c7 {
-        display: block;
-        width: 100%;}
-
-    footer ul {
-        text-align: center;
-        display: block;
-        width: 100%;
-        margin-left: 0 !important;}
-
-    footer ul:last-of-type {
-        margin-bottom: 0;}
-
-    footer ul:last-of-type br {
-        display: none;}
-
-    footer > div:nth-of-type(2) {
-        justify-self: start;
-        width: 100%;
-    }
-    footer ul:last-of-type li:first-child {
-        display: inline-block;
-    }
-
-    #contact {
-        display: block;
-        border: none;
-        border-radius: 0;
-        width: 100%;}
-
-    #contactus p  {
-        font-size: 14px;
-        display: block;
-        margin: auto;}
-
-    #homepage .c3,
-    #homepage .c7 {
-        display: block;
-        width: 100%;}
-
-    #homepage .c7 {
-        margin-top: 25px;}
-
-    #homepage img {
-        display: none;}
-
-    #sales,
-    #rentals {
-        display: block;
-        text-align: center;
-        background: rgb(125,126,125);
-        background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(28,28,28,1) 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(28,28,28,1)));
-        background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#1c1c1c',GradientType=0 );
-        height: auto;
-        line-height: 1;
-        width: 100%;}
-
-    #sales p,
-    #rentals p {
-        line-height: 1;
-        font-size: 24px;}
-
-    #sales span,
-    #rentals span {
-        font-size: 32px;
-        margin-top: 5px;
-        display: block;}
-
-    .contact {
-        background: rgb(125,126,125);
-        background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(28,28,28,1) 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(28,28,28,1)));
-        background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#1c1c1c',GradientType=0 );
-        height: auto;
-        text-align: center;}
-
-    .contact span:nth-of-type(2),
-    .contact span:nth-of-type(3) {
-        font-size: 14px;}
-
-    .contact a {
-        font-size: 14px;}
-
-    .landlord {
-        background: rgb(125,126,125);
-        background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(28,28,28,1) 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(28,28,28,1)));
-        background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(28,28,28,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#1c1c1c',GradientType=0 );
-        height: auto;
-        text-align: center;}
-
-    .landlord span:nth-of-type(2),
-    .landlord span:nth-of-type(3) {
-        font-size: 14px;}
-
-    .landlord a {
-        font-size: 14px;}
-
-    /*footer ul:first-of-type li:first-child {*/
+/*footer ul:first-of-type li:first-child {*/
     /*    background: #fff;*/
     /*    padding: 5px 0;*/
     /*    color: #000;}*/

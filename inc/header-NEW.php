@@ -27,10 +27,10 @@
 
         <nav>
             <div>
-                <a href="<?php echo $webPath; ?>search?type=sales">Sales</a>
-                <a href="<?php echo $webPath; ?>search?type=rentals">Rentals</a>
-                <a href="<?php echo $webPath; ?>blog">Blog</a>
-                <a href="<?php echo $webPath; ?>contact">Contact</a>
+                <a href="<?php echo $webPath; ?>search.php?type=sales">Sales</a>
+                <a href="<?php echo $webPath; ?>search.php?type=rentals">Rentals</a>
+                <a href="<?php echo $webPath; ?>blog.php">Blog</a>
+                <a href="<?php echo $webPath; ?>contact.php">Contact</a>
             </div>
 
             <div>

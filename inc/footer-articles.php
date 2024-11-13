@@ -8,10 +8,10 @@
     </div>
     <div>
         <ul>
-            <li><a href="../<?php echo $webPath; ?>search?type=sales">Sales</a></li>
-            <li><a href="../<?php echo $webPath; ?>search?type=rentals">Rentals</a></li>
-            <li><a href="../<?php echo $webPath; ?>blog">Blog</a></li>
-            <li><a href="../<?php echo $webPath; ?>contact">Contact</a></li>
+            <li><a href="../<?php echo $webPath; ?>search.php?type=sales">Sales</a></li>
+            <li><a href="../<?php echo $webPath; ?>search.php?type=rentals">Rentals</a></li>
+            <li><a href="../<?php echo $webPath; ?>blog.php">Blog</a></li>
+            <li><a href="../<?php echo $webPath; ?>contact.php">Contact</a></li>
         </ul>
         <div class="copy">
             <img src="../<?php echo $imgPath; ?>equal-housing-opportunity-logo-reverse.png" alt="Equal Housing Opportunity" style="height:100px; width: auto;" class="eho">
